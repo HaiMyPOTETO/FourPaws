@@ -1,32 +1,71 @@
-
- .header{
-    
-    height: 659px;
-    border: 2px solid gray;
-    background-image: url(webb/Rectangle\ 417.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header2 {
+media screen and (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    z-index: 1;
-    color: white;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-}
-
-.wa{
+    flex-wrap: wrap;
+    height: 80px;
+  }
+  
+  .menu div {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .option:hover {
+    text-decoration: underline;
+    text-decoration-color: #EEB506;
+  }
+  .menubar div {
+    color:black;
+    padding: 12px 24px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight:700;
     cursor: pointer;
-}
-
-.logo {
-    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menubar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 160px;
+    top:30px;
+  
+  }
+  
+  .save, .yes, .ready {
+    background-color: #EEB506;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: none;
     font-weight: bold;
-    color: white    ;
-}
+  }
+  
+  .save:hover, .ready:hover, .yes:hover , .pets_50_in4:hover{
+    opacity: 50%;
+  }
+  
+  .logo1 {
+    height: 83px;
+    min-width: 65px;
+    object-fit: cover;
+    position:absolute;
+    left: 160px;
+    top:18px;
+  }
+  
 
 .nav {
     display: flex;
